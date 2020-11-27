@@ -1,0 +1,28 @@
+#include	<stdio.h>
+   int main(){
+	setbuf (stdout,NULL);
+	float bill;
+	float tax;
+	float totalbill;
+	float finalamount;
+	float discount;
+	puts("Enter the amount");
+	scanf("%f",&bill);
+
+	tax=bill*0.05;
+    totalbill=bill+tax;
+
+if(totalbill>=1000){
+
+	finalamount=totalbill*0.9;
+	}
+else{
+	finalamount=totalbill;
+}
+    discount=totalbill-finalamount;
+
+	   printf("Amount to be paid : %f\n",finalamount);
+	   printf("Discount availed : %f",discount);
+
+	   return 0;
+   }
